@@ -20,3 +20,4 @@ echo ""
 echo "top 10 largest files"
 find / -type f -exec ls -alh --block-size=M 2>/dev/null {} \: |sort -hr -k5 | head -n 10
 echo ""
+#script done lab 1 part 1
