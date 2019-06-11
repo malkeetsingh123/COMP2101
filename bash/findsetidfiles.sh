@@ -18,6 +18,6 @@ echo "============="
 find / -type f -executable -perm -2000 -ls 2>/dev/null | sort -k 3
 echo ""
 echo "top 10 largest files"
-find / -type f -exec ls -alh --block-size=M 2>/dev/null {} \: |sort -hr -k5 | head -n 10
+find $HOME -type f -exec ls -alh --block-size=M 2>/dev/null {} \; | sort -hr -k5 | head -n 10
 echo ""
 #script done lab 1 part 1
